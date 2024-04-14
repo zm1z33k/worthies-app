@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "2fa2e613-4853-428b-8406-41fb439b883b",
+		"name": "worthies-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33775278"
+	},
+	"item": [
+		{
+			"name": "recoSet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"bfdf2d5c9b3ea67811459b8a590afb60\",\r\n    \"rating\": 8,\r\n    \"genre\": \"Crime\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/reco/set",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"reco",
+						"set"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"bfdf2d5c9b3ea67811459b8a590afb60\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "watchlist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"bfdf2d5c9b3ea67811459b8a590afb60\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/watchlist",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"watchlist"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
