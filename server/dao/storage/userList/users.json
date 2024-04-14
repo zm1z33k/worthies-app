@@ -1,0 +1,26 @@
+[
+{
+    "userId":"2f8a5a38876f3b2c8118c31159ccbf65",
+    "name":"Cal",
+    "surname":"Kestis",
+    "email":"calkestis@survivor.sw",
+    "role":"user",
+    "watchlistId":"16d1db140drtnh8dr92tv4h9vr8dfv9"
+},
+{
+    "userId":"bfdf2d5c9b3ea67811459b8a590afb60",
+    "name":"Bode",
+    "surname":"Akuna",
+    "email":"bodeakuna@survivor.sw",
+    "role":"user",
+    "watchlistId":"6a6e4dedg259aeg25p59b8a590afb60"
+},
+{
+    "userId":"cf0b1cb27518896b2de04145fd8aa5e9",
+    "name":"Greez",
+    "surname":"Dritus",
+    "email":"greezdritus@survivor.sw",
+    "role":"user",
+    "watchlistId":"f8as24fv8egvr29429se845cg3r9e4r"
+}
+]
