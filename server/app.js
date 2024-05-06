@@ -5,14 +5,16 @@ const app = express()
 const port = 8000
 const path = require('path')
 
+// Enable CORS
+app.use(cors())
+
 // Support for application/json
 app.use(express.json())
 
 // Support for application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }))
 
-// Enable CORS
-app.use(cors())
+app.use("/public", express.static(path.join(__dirname,"public")))
 
 // Importing the routes
 const profileRouter = require(path.join(__dirname, 'dao/storage/controllers/profile'))

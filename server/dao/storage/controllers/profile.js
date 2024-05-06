@@ -10,7 +10,7 @@ const {
   writeToWatchlist} = require(path.join(__dirname, '../utils/utils.js'));
 
 // Get the user profile
-router.get("/", (req, res) => {
+router.post("/", (req, res) => {
 
     // Check if the user ID is defined  
     if (findUserByid(req.body.userId) == undefined){

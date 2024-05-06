@@ -28,7 +28,7 @@
     {"movieId":25,"title":"The Lord of the Rings: The Return of the King","rating":9.0,"genre":"Fantasy","poster":"lotr2003.jpg"},
     {"movieId":26,"title":"Cosmos: A Spacetime Odyssey","rating":9.3,"genre":"Documentary","poster":"cosmos.jpg"},
     {"movieId":27,"title":"Legend of the Galactic Heroes","rating":9.0,"genre":"Scifi","poster":"galactic.jpg"},
-    {"movieId":28,"title":"Arcane","rating":7.1,"genre":"Adventure","poster":"arcane.jpg"},
+    {"movieId":28,"title":"Arcane","rating":9.0,"genre":"Adventure","poster":"arcane.jpg"},
     {"movieId":29,"title":"Sherlock","rating":9.1,"genre":"Crime","poster":"sherlock.jpg"},
     {"movieId":30,"title":"Planet Earth II","rating":9.5,"genre":"Documentary","poster":"planetearth2.jpg"}
 ]

@@ -63,7 +63,7 @@ router.post("/set", (req, res) => {
     title: randomMovie.title,
     rating: randomMovie.rating,
     genre: randomMovie.genre,
-    poster: `/dao/storage/recoToShow/posters/${randomMovie.poster}`,
+    poster: `/public/posters/${randomMovie.poster}`,
     date: today.getDate().toString()+"-"+(today.getMonth()+1).toString()+"-"+today.getFullYear().toString()
   }
 

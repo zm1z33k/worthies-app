@@ -9,7 +9,7 @@ const {
   writeToWatchlist} = require(path.join(__dirname, '../utils/utils.js'));
 
 // Get the watchlist of the selected user
-router.get("/", (req, res) => {
+router.post("/", (req, res) => {
     const selectedUser = findUserByid(req.body.userId)
   
     // Check if the user is defined

@@ -1,50 +1,36 @@
-import EventList from "./EventList";
-import NavBar from "./NavBar";
-import UserProvider from "./UserProvider";
-import EventListProvider from "./EventListProvider";
+
+import NavigationBar from './components/navigationBar';
+import {
+  BrowserRouter as Router,
+  Routes, // instead of "Switch"
+  Route,
+} from "react-router-dom";
+import './App.css';
+import Welcome from './routeComponents/welcome.js';
+
+import UserProvider from './contexts/userProvider.js'; // Import UserProvider
+import Recommendation from './routeComponents/recomendation.js';
+import RecommendationSet from './routeComponents/recoSet.js';
+import UserProfile from './routeComponents/userprofile.js';
+import Watchlist from './routeComponents/watchlist.js';
 
 function App() {
   return (
-    <div style={componentStyle()}>
-      <UserProvider>
-        <EventListProvider>
-          <div className="card-header">
-            <NavBar />
-          </div>
-          <div style={bodyStyle()}>
-            <EventList />
-          </div>
-          <div className={"card-footer text-light"} style={footerStyle()}>
-            © Ivo Milota
-          </div>
-        </EventListProvider>
-      </UserProvider>
-    </div>
+    <Router>
+      <div className="App">
+        <UserProvider>
+          <NavigationBar />
+          <Routes>
+            <Route path="/" element={ <Welcome />} />
+            <Route path="/reco" element={<Recommendation />} />
+            <Route path="/reco/set" element={<RecommendationSet />} />
+            <Route path="/profile" element={<UserProfile />} />
+            <Route path="/watchlist" element={<Watchlist />} />
+          </Routes>
+        </UserProvider>
+      </div>
+    </Router>
   );
-}
-
-function componentStyle() {
-  return {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    overflow: "hidden",
-    backgroundColor: "#187bcd",
-  };
-}
-
-function bodyStyle() {
-  return {
-    overflow: "auto",
-    padding: "16px",
-    flex: "1",
-    borderTop: "white 4px solid",
-    borderBottom: "white 4px solid",
-  };
-}
-
-function footerStyle() {
-  return { padding: "8px", textAlign: "center", backgroundColor: "#d63232" };
 }
 
 export default App;
